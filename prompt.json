@@ -1,0 +1,129 @@
+{
+"prompt_metadata": {
+"target_platform": "Android",
+"language": "Kotlin",
+"ui_framework": "Jetpack Compose (100% Declarative UI)",
+"architecture_pattern": "Enterprise Clean Architecture (Data, Domain, Presentation)",
+"difficulty_level": "Industrial Workstation / Production-Ready",
+"build_system": "Gradle Kotlin DSL (.kts)",
+"min_sdk": 26,
+"target_sdk": 34
+},
+"agent_instructions": {
+"role": "You are a Principal Mobile Architect specializing in Islamic and high-precision sensor-based Android applications. Your goal is to write highly performance-optimized, clean, and beautifully localized code for 'Al-Mumin Enterprise' following strict MVVM + Clean Architecture principles.",
+"code_standards": [
+"Zero-clutter architecture: separation of concerns between raw UI presentation, reactive ViewModel state-holders, domain business logic, and transactional repositories.",
+"Strict memory footprint management for audio and storage systems.",
+"Beautiful custom canvas rendering for traditional Islamic borders, dials, and vector graphics.",
+"Robust offline-first architecture with localized room state caches."
+]
+},
+"technical_specification": {
+"dependencies": {
+"prayer_calculation": "com.batoulapps.adhan:adhan:1.4.0 (for high-precision astronomical calculations)",
+"database": "androidx.room:room-runtime:2.6.1 + room-ktx for Coroutines support",
+"networking": "com.squareup.retrofit2:retrofit:2.9.0 (for fetching audio streams and on-demand files)",
+"dependency_injection": "com.google.dagger:hilt-android:2.51",
+"navigation": "androidx.navigation:navigation-compose:2.7.7",
+"location": "com.google.android.gms:play-services-location:21.2.0 (for automated Fused Location Provider)",
+"media": "androidx.media3:media3-exoplayer:1.3.1 (for highly reliable audio streaming and caching)"
+},
+"features": {
+"onboarding_flow": {
+"description": "A clean, dual-step localized startup wizard setting up country-specific and language-specific configs before accessing the main dashboard.",
+"requirements": [
+"Step 1: Language Selector. User selects preferred interface language (Arabic, French, English, Spanish). The app instantly updates the configuration context globally.",
+"Step 2: Country Selector. User selects country (highlighting Morocco as featured). If Morocco is selected, automatically lock calculation method to 'CalculationMethod.MOROCCO' (Moroccan Ministry of Habous and Islamic Affairs method: Fajr at 19 degrees, Isha at 17 degrees, adjustments: -3 min Sunrise, +5 min Dhuhr, +5 min Maghrib).",
+"Save the selected onboarding configuration inside Datastore Preferences so this screen only runs on the first launch."
+]
+},
+"salat_times_and_location": {
+"description": "High-accuracy dual-provider prayer calculation framework engineered for reliable local timings using dual network/GPS location queries.",
+"requirements": [
+"Dual location fallback: Use Google FusedLocationProviderClient to query both GPS (Fine) and Wi-Fi/Cell towers (Coarse) networks simultaneously. If hardware GPS is missing or shielded indoors, seamlessly fall back to network/Wi-Fi-based coordinates.",
+"Completely local calculations via Batoulapps Adhan library. Cache last successful coordinates in DataStore/SharedPreferences. If offline with no signal, utilize cached coordinates immediately to generate correct astronomical schedules.",
+"Pre-register Calculation Method configurations based on onboarding country (e.g., Ministry of Habous for Morocco, Egyptian Authority for North Africa, Umm Al-Qura for KSA, MWL for general)."
+]
+},
+"adhan_audio_notifications": {
+"description": "Enterprise-grade foreground scheduler playing custom local audio alarms precisely at prayer times, offering the top 5 historic and popular global voices.",
+"requirements": [
+"Create an AlarmManager wrapper registering Exact Alarms (utilizing 'setAlarmClock' for maximum device wake-up reliability).",
+"Include options in Settings to choose from the following 5 Adhan voices:",
+"  1. Makkah (Al-Haram - Sheikh Ali Mulla)",
+"  2. Madinah (Al-Nabawi - Sheikh Surayhi)",
+"  3. Al-Aqsa (Jerusalem)",
+"  4. Morocco (Maghiri / Andalusian traditional style)",
+"  5. Sheikh Abdul Basit Abdus Samad",
+"Ship lightweight default audio files in the 'res/raw' folder or handle a robust internal downloader to stream/cache these high-quality audio formats safely."
+]
+},
+"qibla_compass": {
+"description": "High-fidelity compass direction visualizer using device orientation sensors with extreme noise isolation.",
+"requirements": [
+"Listen to 'Sensor.TYPE_ROTATION_VECTOR' dynamically. Fall back gracefully to 'Sensor.TYPE_ACCELEROMETER' + 'Sensor.TYPE_MAGNETIC_FIELD' on legacy hardware.",
+"Implement a Low-Pass Noise Filter (exponential moving average: angle = alpha * newAngle + (1 - alpha) * oldAngle) to prevent any needle jittering, assuring premium smooth rendering.",
+"Calculate Qibla bearing relative to current GPS/Wi-Fi coordinates and Kaaba location using Great Circle Formula: theta = atan2(sin(dLON)*cos(LAT2), cos(LAT1)*sin(LAT2) - sin(LAT1)*cos(LAT2)*cos(dLON)).",
+"Design a rich canvas dial representing North and a distinct green-gold Arrow pointing directly to the Kaaba. Provide brief haptic vibration pulse via 'Vibrator' utility when matching perfectly (angle diff < 1.5°)."
+]
+},
+"quran_reader_paginated": {
+"description": "Arabic-only high-design visual Quran reader mimicking the beautiful, standard 15-line Madinah Mushaf (resembling 'standard2-quran.pdf') layout.",
+"requirements": [
+"No distracting default translations on screen. Maintain an immersive, purely Arabic visual focus using authentic vector-based or beautiful Amiri/Scheherazade Quranic fonts.",
+"Implement page-by-page swiping (using HorizontalPager or customized Canvas layouts) replicating the 604-page structure of the classic Mushaf.",
+"Introduce visual UI styling controls: Dynamic Arabic font-size slider, high-contrast reading themes (Cream, Soft Warm Gold, Dark Night Mode), and traditional elegant framing surrounding page borders."
+]
+},
+"quran_audio_caching": {
+"description": "On-demand progressive audio downloader for specific Surahs to maintain minimal physical storage footprint on user phones.",
+"requirements": [
+"Supported Reciters API URLs (use Quran.com audio/MP3 cdn structure or secure audio links):",
+"  1. Saad Al-Ghamdi (Said Lahandy)",
+"  2. Saud Al-Shuraim",
+"  3. Maher Al-Muaiqly",
+"  4. Ali Jaber",
+"Implement a download-on-demand service: When a user clicks play for a Surah, the app streams directly from API and initiates a background download in the device's internal cache folder.",
+"Automatically save files with name structures like 'reciterId_surahNum.mp3'. Maintain a database of downloaded files so the user can play them completely offline later.",
+"Provide a clear storage dashboard in settings displaying total cache size and a button to clean files to optimize storage."
+]
+},
+"adhkar_and_hadith": {
+"description": "A dedicated spiritual companion screen providing morning/evening Adhkar and daily curated authentic advices.",
+"requirements": [
+"Morning Supplications (Adkar Al-Sabah) and Evening Supplications (Adkar Al-Masaa) displaying the supplication text, reference, counter button (tapping decreases required loop, with slight haptic feedback on completion).",
+"Daily Hadith and Muslim Advice section displaying authentic Hadith with simple custom sharing options (WhatsApp, SMS, copying text)."
+]
+}
+},
+"ui_ux_design": {
+"theme_color_palette": {
+"primary": "#0D5C3A (Deep Moroccan Emerald Green)",
+"secondary": "#C5A880 (Imperial Warm Sand Gold)",
+"background": "#FDFBF7 (Premium Soft Cream for daytime reading)",
+"surface": "#FFFFFF (Pure White)",
+"dark_background": "#0D1310 (Ultra Dark Forest Black for low-light comfort)"
+}
+}
+},
+"execution_steps": [
+{
+"step_1_onboarding_and_localization": "Build the first-launch localization setup screens. Create custom country/language selections, configure local system locale switches, and map calculation models directly."
+},
+{
+"step_2_location_provider": "Implement the FusedLocationProviderClient utility class. Setup the permission-handler mechanism. Ensure fallback from fine-GPS coordinates to Wi-Fi/Cell network coordinates, caching coordinates locally."
+},
+{
+"step_3_adhan_and_scheduler": "Wire up the Batoulapps Adhan library under the local calculations repository, mapping 'Morocco Ministry of Habous' dynamically. Code the background AlarmManager framework to broadcast and play the selected top 5 Adhan files on exact schedules."
+},
+{
+"step_4_qibla_sensor_canvas": "Develop the custom sensor interface using SensorManager. Apply the low-pass filter formula to orientation sensors. Draw the high-fidelity Compose Custom Canvas pointer showing true North vs Kaaba direction."
+},
+{
+"step_5_quran_page_rendering": "Design the Arabic-only Quran reader layout modeled after physical 15-line layouts. Embed custom Islamic fonts. Incorporate progressive streaming/downloading via ExoPlayer for the requested reciters (Saad Al-Ghamdi, Al-Shuraim, Al-Muaiqly, Ali Jaber) caching MP3 files onto persistent memory."
+},
+{
+"step_6_adhkar_and_hadith": "Add local storage tables or hardcoded localized structures for morning/evening Adhkar (with digital counter taps) and daily Hadiths."
+}
+]
+}

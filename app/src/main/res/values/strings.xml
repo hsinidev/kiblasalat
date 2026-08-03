@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Moslima</string>
+    <string name="nav_prayer">Prayer</string>
+    <string name="nav_qibla">Qibla</string>
+    <string name="nav_quran">Quran</string>
+    <string name="nav_adkar">Adkar</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="onboarding_title">Welcome to Moslima</string>
+    <string name="onboarding_subtitle">Your spiritual companion for prayer times and Quran</string>
+    <string name="onboarding_step_language">Step 1: Choose Language</string>
+    <string name="onboarding_step_location">Step 2: Choose Location</string>
+    <string name="onboarding_step_offsets">Step 3: Calibrate Salat Times</string>
+    <string name="onboarding_step_adhan">Step 4: Select Adhan Voice</string>
+    <string name="button_next">Next</string>
+    <string name="button_back">Back</string>
+    <string name="button_finish">Finish</string>
+
+    <string name="select_country">Select Country</string>
+    <string name="select_city">Select City</string>
+    <string name="gps_location">GPS Location</string>
+    <string name="gps_sync">Sync GPS</string>
+    <string name="gps_disabled_warning">GPS / Wifi Location is disabled or unavailable. Please select your location manually below, or enable permissions.</string>
+    <string name="enable_gps">Enable</string>
+    
+    <string name="morocco">Morocco</string>
+    <string name="saudi_arabia">Saudi Arabia</string>
+    <string name="egypt">Egypt</string>
+    <string name="turkey">Turkey</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="pakistan">Pakistan</string>
+    <string name="united_states">United States</string>
+    
+    <string name="casablanca">Casablanca</string>
+    <string name="rabat">Rabat</string>
+    <string name="marrakech">Marrakech</string>
+    <string name="fes">Fes</string>
+    <string name="tangier">Tangier</string>
+    <string name="agadir">Agadir</string>
+    <string name="oujda">Oujda</string>
+    
+    <string name="makkah">Makkah</string>
+    <string name="medina">Medina</string>
+    <string name="cairo">Cairo</string>
+    <string name="karachi">Karachi</string>
+    <string name="jakarta">Jakarta</string>
+    <string name="istanbul">Istanbul</string>
+    <string name="london">London</string>
+    <string name="new_york">New York</string>
+
+    <string name="calculation_method">Calculation Method</string>
+    <string name="asr_madhab">Asr School (Madhab)</string>
+    <string name="standard_shafi">Standard (Shafi\'i, Maliki, Hanbali)</string>
+    <string name="hanafi">Hanafi</string>
+    
+    <string name="calibrate_title">Calibrate / Fix Time</string>
+    <string name="calibrate_desc">Adjust minutes manually to match your local mosque precisely.</string>
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+
+    <string name="adhan_voice_title">Choose Adhan Voice</string>
+    <string name="adhan_voice_desc">This voice will play during prayer times alerts.</string>
+    <string name="voice_mecca">Makkah (Al-Haram - Ali Mulla)</string>
+    <string name="voice_medina">Madinah (Al-Nabawi - Surayhi)</string>
+    <string name="voice_al_aqsa">Al-Aqsa (Jerusalem)</string>
+    <string name="voice_morocco">Morocco (Andalusian Traditional)</string>
+    <string name="voice_abdul_basit">Sheikh Abdul Basit</string>
+    <string name="preview_audio">Preview</string>
+    <string name="downloading">Downloading…</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="download_failed">Download Failed</string>
+
+    <string name="qibla_title">Qibla Finder</string>
+    <string name="qibla_subtitle">Keep your phone flat for accurate results</string>
+    <string name="qibla_aligned">Kaaba Aligned!</string>
+    <string name="qibla_aligned_desc">You are facing directly towards Makkah.</string>
+    <string name="qibla_angle">QIBLA ANGLE</string>
+    <string name="your_heading">YOUR HEADING</string>
+    <string name="sensors_missing">Hardware Sensors Missing</string>
+    <string name="sensors_missing_desc">Compass sensors (Rotation Vector / Magnetometer) are not available on this device.</string>
+
+    <string name="quran_title">Quran Reader</string>
+    <string name="quran_search_placeholder">Search Surah…</string>
+    <string name="no_surahs_found">No Surahs found</string>
+    <string name="bookmarks_tab">Bookmarks</string>
+    <string name="all_surahs_tab">All Surahs</string>
+    <string name="no_bookmarks_desc">No bookmarked pages yet</string>
+    
+    <string name="reciter_select">Select Reciter</string>
+    <string name="play_audio">Play Recitation</string>
+    <string name="pause_audio">Pause</string>
+    <string name="stop_audio">Stop</string>
+    
+    <string name="adkar_sabah">Morning Supplications</string>
+    <string name="adkar_masa">Evening Supplications</string>
+    <string name="hadith_advice">Hadith &amp; Advice</string>
+    <string name="share_hadith">Share Hadith</string>
+    <string name="copy_text">Copy Text</string>
+    <string name="copied">Copied to clipboard!</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="storage_title">Storage Dashboard</string>
+    <string name="storage_desc">Manage downloaded Quran and Adhan audio files.</string>
+    <string name="clear_cache">Clear Cached Audio</string>
+    <string name="cache_cleared">Audio cache cleared successfully.</string>
+    <string name="language_setting">Interface Language</string>
+</resources>

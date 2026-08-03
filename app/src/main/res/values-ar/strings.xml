@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">مسلمة</string>
+    <string name="nav_prayer">الصلاة</string>
+    <string name="nav_qibla">القبلة</string>
+    <string name="nav_quran">القرآن</string>
+    <string name="nav_adkar">الأذكار</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <string name="onboarding_title">مرحباً بك في تطبيق مسلمة</string>
+    <string name="onboarding_subtitle">رفيقك الروحي لأوقات الصلاة والقرآن الكريم</string>
+    <string name="onboarding_step_language">الخطوة ١: اختر اللغة</string>
+    <string name="onboarding_step_location">الخطوة ٢: اختر الموقع</string>
+    <string name="onboarding_step_offsets">الخطوة ٣: ضبط أوقات الصلاة</string>
+    <string name="onboarding_step_adhan">الخطوة ٤: اختر صوت الأذان</string>
+    <string name="button_next">التالي</string>
+    <string name="button_back">السابق</string>
+    <string name="button_finish">إنهاء</string>
+
+    <string name="select_country">اختر الدولة</string>
+    <string name="select_city">اختر المدينة</string>
+    <string name="gps_location">موقع نظام تحديد المواقع (GPS)</string>
+    <string name="gps_sync">تحديث الموقع</string>
+    <string name="gps_disabled_warning">خدمة الموقع (GPS/الشبكة) غير مفعلة أو غير متاحة. يرجى اختيار موقعك يدوياً أدناه أو تفعيل الصلاحيات.</string>
+    <string name="enable_gps">تفعيل</string>
+    
+    <string name="morocco">المغرب</string>
+    <string name="saudi_arabia">المملكة العربية السعودية</string>
+    <string name="egypt">مصر</string>
+    <string name="turkey">تركيا</string>
+    <string name="indonesia">إندونيسيا</string>
+    <string name="pakistan">باكستان</string>
+    <string name="united_states">الولايات المتحدة</string>
+    
+    <string name="casablanca">الدار البيضاء</string>
+    <string name="rabat">الرباط</string>
+    <string name="marrakech">مراكش</string>
+    <string name="fes">فاس</string>
+    <string name="tangier">طنجة</string>
+    <string name="agadir">أكادير</string>
+    <string name="oujda">وجدة</string>
+    
+    <string name="makkah">مكة المكرمة</string>
+    <string name="medina">المدينة المنورة</string>
+    <string name="cairo">القاهرة</string>
+    <string name="karachi">كراتشي</string>
+    <string name="jakarta">جاكرتا</string>
+    <string name="istanbul">إسطنبول</string>
+    <string name="london">لندن</string>
+    <string name="new_york">نيويورك</string>
+
+    <string name="calculation_method">طريقة الحساب</string>
+    <string name="asr_madhab">المذهب الفقهي للعصر</string>
+    <string name="standard_shafi">الجمهور (الشافعي، المالكي، الحنبلي)</string>
+    <string name="hanafi">الحنفي</string>
+    
+    <string name="calibrate_title">تعديل أوقات الصلاة</string>
+    <string name="calibrate_desc">قم بتعديل الدقائق يدوياً لتتطابق تماماً مع المسجد المحلي.</string>
+    <string name="fajr">الفجر</string>
+    <string name="sunrise">الشروق</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+
+    <string name="adhan_voice_title">اختر صوت الأذان</string>
+    <string name="adhan_voice_desc">سيعمل هذا الصوت عند دخول وقت الصلاة.</string>
+    <string name="voice_mecca">أذان مكة (الحرم المكي - الشيخ علي ملا)</string>
+    <string name="voice_medina">أذان المدينة (المسجد النبوي - الشيخ السريحي)</string>
+    <string name="voice_al_aqsa">أذان الأقصى (القدس)</string>
+    <string name="voice_morocco">أذان المغرب (الأداء المغربي الأندلسي)</string>
+    <string name="voice_abdul_basit">الشيخ عبد الباسط عبد الصمد</string>
+    <string name="preview_audio">معاينة</string>
+    <string name="downloading">جاري التحميل…</string>
+    <string name="downloaded">تم التحميل</string>
+    <string name="download_failed">فشل التحميل</string>
+
+    <string name="qibla_title">محدد اتجاه القبلة</string>
+    <string name="qibla_subtitle">ضع الهاتف بشكل مسطح للحصول على نتائج دقيقة</string>
+    <string name="qibla_aligned">موجّه نحو الكعبة!</string>
+    <string name="qibla_aligned_desc">أنت تواجه الكعبة المشرفة مباشرة.</string>
+    <string name="qibla_angle">زاوية القبلة</string>
+    <string name="your_heading">اتجاهك الحالي</string>
+    <string name="sensors_missing">مستشعرات البوصلة مفقودة</string>
+    <string name="sensors_missing_desc">مستشعرات البوصلة غير متوفرة على هذا الجهاز.</string>
+
+    <string name="quran_title">القارئ القرآني</string>
+    <string name="quran_search_placeholder">البحث عن سورة…</string>
+    <string name="no_surahs_found">لم يتم العثور على سور</string>
+    <string name="bookmarks_tab">المحفوظات</string>
+    <string name="all_surahs_tab">كل السور</string>
+    <string name="no_bookmarks_desc">لا توجد صفحات محفوظة بعد</string>
+    
+    <string name="reciter_select">اختر القارئ</string>
+    <string name="play_audio">تشغيل التلاوة</string>
+    <string name="pause_audio">إيقاف مؤقت</string>
+    <string name="stop_audio">إيقاف</string>
+    
+    <string name="adkar_sabah">أذكار الصباح</string>
+    <string name="adkar_masa">أذكار المساء</string>
+    <string name="hadith_advice">أحاديث ونصائح</string>
+    <string name="share_hadith">مشاركة الحديث</string>
+    <string name="copy_text">نسخ النص</string>
+    <string name="copied">تم النسخ إلى الحافظة!</string>
+
+    <string name="settings_title">الإعدادات</string>
+    <string name="storage_title">لوحة التحكم بالتخزين</string>
+    <string name="storage_desc">إدارة ملفات الصوت المحملة للقرآن والأذان.</string>
+    <string name="clear_cache">مسح الملفات الصوتية المؤقتة</string>
+    <string name="cache_cleared">تم مسح التخزين المؤقت للملفات الصوتية بنجاح.</string>
+    <string name="language_setting">لغة التطبيق</string>
+</resources>

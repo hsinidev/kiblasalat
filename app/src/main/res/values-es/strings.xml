@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Moslima</string>
+    <string name="nav_prayer">Oración</string>
+    <string name="nav_qibla">Qibla</string>
+    <string name="nav_quran">Corán</string>
+    <string name="nav_adkar">Adkar</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="onboarding_title">Bienvenido a Moslima</string>
+    <string name="onboarding_subtitle">Tu compañero espiritual para horarios de oración y el Corán</string>
+    <string name="onboarding_step_language">Paso 1: Elige el idioma</string>
+    <string name="onboarding_step_location">Paso 2: Elige tu ubicación</string>
+    <string name="onboarding_step_offsets">Paso 3: Calibrar horas de oración</string>
+    <string name="onboarding_step_adhan">Paso 4: Seleccionar voz del Adhán</string>
+    <string name="button_next">Siguiente</string>
+    <string name="button_back">Atrás</string>
+    <string name="button_finish">Finalizar</string>
+
+    <string name="select_country">Seleccionar país</string>
+    <string name="select_city">Seleccionar ciudad</string>
+    <string name="gps_location">Ubicación GPS</string>
+    <string name="gps_sync">Sincronizar GPS</string>
+    <string name="gps_disabled_warning">La localización GPS / Wifi está desactivada o no disponible. Por favor selecciona tu ubicación manualmente a continuación o activa los permisos.</string>
+    <string name="enable_gps">Activar</string>
+    
+    <string name="morocco">Marruecos</string>
+    <string name="saudi_arabia">Arabia Saudita</string>
+    <string name="egypt">Egipto</string>
+    <string name="turkey">Turquía</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="pakistan">Pakistán</string>
+    <string name="united_states">Estados Unidos</string>
+    
+    <string name="casablanca">Casablanca</string>
+    <string name="rabat">Rabat</string>
+    <string name="marrakech">Marrakech</string>
+    <string name="fes">Fez</string>
+    <string name="tangier">Tánger</string>
+    <string name="agadir">Agadir</string>
+    <string name="oujda">Oujda</string>
+    
+    <string name="makkah">La Meca</string>
+    <string name="medina">Medina</string>
+    <string name="cairo">El Cairo</string>
+    <string name="karachi">Karachi</string>
+    <string name="jakarta">Yakarta</string>
+    <string name="istanbul">Estambul</string>
+    <string name="london">Londres</string>
+    <string name="new_york">Nueva York</string>
+
+    <string name="calculation_method">Método de cálculo</string>
+    <string name="asr_madhab">Escuela Jurídica (Madhab)</string>
+    <string name="standard_shafi">Estándar (Shafi\'i, Maliki, Hanbali)</string>
+    <string name="hanafi">Hanafi</string>
+    
+    <string name="calibrate_title">Calibrar / Ajustar horas</string>
+    <string name="calibrate_desc">Ajusta manualmente los minutos para que coincidan con tu mezquita local.</string>
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Amanecer</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+
+    <string name="adhan_voice_title">Elegir voz del Adhán</string>
+    <string name="adhan_voice_desc">Esta voz se reproducirá en las alertas de oración.</string>
+    <string name="voice_mecca">Makkah (Al-Haram - Ali Mulla)</string>
+    <string name="voice_medina">Madinah (Al-Nabawi - Surayhi)</string>
+    <string name="voice_al_aqsa">Al-Aqsa (Jerusalén)</string>
+    <string name="voice_morocco">Marruecos (Tradicional Andalusí)</string>
+    <string name="voice_abdul_basit">Sheikh Abdul Basit</string>
+    <string name="preview_audio">Vista previa</string>
+    <string name="downloading">Descargando…</string>
+    <string name="downloaded">Descargado</string>
+    <string name="download_failed">Error de descarga</string>
+
+    <string name="qibla_title">Brújula Qibla</string>
+    <string name="qibla_subtitle">Mantén el teléfono plano para obtener resultados precisos</string>
+    <string name="qibla_aligned">¡Alineado con la Kaaba!</string>
+    <string name="qibla_aligned_desc">Estás mirando directamente hacia La Meca.</string>
+    <string name="qibla_angle">ÁNGULO QIBLA</string>
+    <string name="your_heading">TU RUMBO</string>
+    <string name="sensors_missing">Faltan sensores de brújula</string>
+    <string name="sensors_missing_desc">Los sensores de brújula no están disponibles en este dispositivo.</string>
+
+    <string name="quran_title">Lector de Corán</string>
+    <string name="quran_search_placeholder">Buscar sura…</string>
+    <string name="no_surahs_found">No se encontraron suras</string>
+    <string name="bookmarks_tab">Favoritos</string>
+    <string name="all_surahs_tab">Todas las Suras</string>
+    <string name="no_bookmarks_desc">No hay páginas marcadas todavía</string>
+    
+    <string name="reciter_select">Seleccionar recitador</string>
+    <string name="play_audio">Reproducir recitación</string>
+    <string name="pause_audio">Pausa</string>
+    <string name="stop_audio">Detener</string>
+    
+    <string name="adkar_sabah">Súplicas de la mañana</string>
+    <string name="adkar_masa">Súplicas de la tarde</string>
+    <string name="hadith_advice">Hadices y consejos</string>
+    <string name="share_hadith">Compartir Hadiz</string>
+    <string name="copy_text">Copiar texto</string>
+    <string name="copied">¡Copiado al portapapeles!</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="storage_title">Panel de almacenamiento</string>
+    <string name="storage_desc">Gestionar archivos de audio descargados de Corán y Adhán.</string>
+    <string name="clear_cache">Borrar archivos de audio</string>
+    <string name="cache_cleared">Memoria caché de audio borrada con éxito.</string>
+    <string name="language_setting">Idioma de la aplicación</string>
+</resources>
